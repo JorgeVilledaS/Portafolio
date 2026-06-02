@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   BASE STYLES 
+   ========================================================= */
+
+:root {
+  --color-void:    #050810;
+  --color-deep:    #080d1a;
+  --color-surface: #0d1628;
+  --color-nebula:  #3b6fd4;
+  --color-pulsar:  #6b5de8;
+  --color-quasar:  #00d4ff;
+  --color-star:    #e8eaf6;
+  --color-dust:    #8892a4;
+}
+
+/* Scroll suave global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset y base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-deep);
+  color: var(--color-star);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   TIPOGRAFÍA BASE
+   ========================================================= */
+
+h1, h2, h3, h4 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   CURSOR PERSONALIZADO — detalle fino
+   ========================================================= */
+* { cursor: default; }
+a, button, [role="button"] { cursor: pointer; }
+
+/* =========================================================
+   SCROLLBAR — discreta, coherente con la paleta
+   ========================================================= */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: var(--color-void); }
+::-webkit-scrollbar-thumb { background: var(--color-nebula); border-radius: 2px; }
+
+/* =========================================================
+   SELECTION — coherente con la paleta
+   ========================================================= */
+::selection {
+  background: rgba(59, 111, 212, 0.35);
+  color: var(--color-star);
+}
+
+/* =========================================================
+   UTILIDADES CUSTOM
+   ========================================================= */
+
+/* Línea decorativa con gradiente */
+.line-gradient {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-nebula), transparent);
+}
+
+/* Tag / etiqueta técnica */
+.tech-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid rgba(59, 111, 212, 0.3);
+  border-radius: 2px;
+  color: var(--color-quasar);
+  background: rgba(59, 111, 212, 0.06);
+}
+
+/* Número de sección estilo dashboard */
+.section-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--color-nebula);
+  letter-spacing: 0.15em;
+  opacity: 0.8;
+}
+
+/* Glow sutil para elementos importantes */
+.glow-nebula {
+  text-shadow: 0 0 30px rgba(59, 111, 212, 0.5);
+}
+.glow-quasar {
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
