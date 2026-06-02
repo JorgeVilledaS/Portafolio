@@ -42,7 +42,7 @@ src/
 
 Fuentes: Syne (titulos) / DM Sans (cuerpo) / JetBrains Mono (datos)
 
-## Animaciones (solo las especificadas)
+## Animaciones 
 
 - Fade-in al scroll  -> FadeInView wrapper
 - Hover en tarjetas  -> Framer Motion whileHover
@@ -54,17 +54,4 @@ Fuentes: Syne (titulos) / DM Sans (cuerpo) / JetBrains Mono (datos)
   npm install
   npm run dev
 
-## Deploy en Vercel
 
-1. Subir a GitHub
-2. Vercel -> New Project -> importar repo
-3. Vercel detecta Vite (vercel.json incluido)
-4. Deploy
-
-## Pendientes antes de lanzar
-
-- Subir foto en src/assets/jorge-photo.jpg
-- Actualizar links GitHub/LinkedIn en Footer.jsx
-- Actualizar email en Navbar.jsx y Footer.jsx
-- Completar datos en src/data/content.js (Dia 3)
-- Subir PDF cuento a public/cuento-jorge-villeda.pdf
