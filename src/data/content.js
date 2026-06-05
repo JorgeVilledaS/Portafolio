@@ -1,5 +1,8 @@
 /**
  * content.js — Datos centralizados del portafolio
+ *
+ * Todo el texto, etiquetas y configuración de contenido vive aquí.
+ * Así Jorge puede actualizar su información sin tocar los componentes.
  */
 
 // =========================================================
@@ -137,6 +140,51 @@ export const SKILL_CATEGORIES = [
       { name: 'Herramientas de IA',  level: 78 },
       { name: 'Automatización',      level: 68 },
     ],
+  },
+]
+
+// =========================================================
+// SECCIÓN 3 — PROYECTOS DESTACADOS
+// =========================================================
+// Jorge: reemplaza image, repoUrl y completa los campos con tus proyectos reales.
+// Puedes agregar o quitar proyectos; el componente se adapta automáticamente.
+
+export const PROJECTS = [
+  {
+    id: 'proyecto-1',
+    title: 'Nombre del proyecto',
+    // Ruta relativa desde /public, ej: '/img/proyectos/proyecto-1.png'
+    // o null para mostrar el placeholder
+    image: null,
+    description: 'Descripción breve del proyecto. Qué hace, para quién, en qué contexto surgió.',
+    problem: 'El problema concreto que este proyecto resuelve o la necesidad que atiende.',
+    learning: 'La cosa más importante que aprendiste construyendo esto.',
+    techs: ['React', 'Python', 'SQL'],
+    repoUrl: 'https://github.com/jorgevilleda/',
+    // 'web' | 'data' | 'algoritmo' — define el color del badge
+    category: 'web',
+  },
+  {
+    id: 'proyecto-2',
+    title: 'Nombre del proyecto',
+    image: null,
+    description: 'Descripción breve del proyecto. Qué hace, para quién, en qué contexto surgió.',
+    problem: 'El problema concreto que este proyecto resuelve o la necesidad que atiende.',
+    learning: 'La cosa más importante que aprendiste construyendo esto.',
+    techs: ['Python', 'Pandas', 'Matplotlib'],
+    repoUrl: 'https://github.com/jorgevilleda/',
+    category: 'data',
+  },
+  {
+    id: 'proyecto-3',
+    title: 'Nombre del proyecto',
+    image: null,
+    description: 'Descripción breve del proyecto. Qué hace, para quién, en qué contexto surgió.',
+    problem: 'El problema concreto que este proyecto resuelve o la necesidad que atiende.',
+    learning: 'La cosa más importante que aprendiste construyendo esto.',
+    techs: ['C++', 'Algoritmos'],
+    repoUrl: 'https://github.com/jorgevilleda/',
+    category: 'algoritmo',
   },
 ]
 

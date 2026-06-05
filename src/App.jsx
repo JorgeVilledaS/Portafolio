@@ -10,8 +10,8 @@ import GridOverlay  from './components/ui/GridOverlay'
 import Hero         from './sections/Hero'
 import QuienSoy     from './sections/QuienSoy'
 import Herramientas from './sections/Herramientas'
+import Proyectos    from './sections/Proyectos'
 import Timeline     from './sections/Timeline'
-import { Proyectos } from './sections/Placeholders'
 
 export default function App() {
   return (
