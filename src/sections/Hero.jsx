@@ -2,7 +2,7 @@
  * Hero.jsx — Sección 1
  *
  * Pantalla completa con:
- *   - Foto profesional (placeholder hasta que la suba)
+ *   - Foto profesional (placeholder hasta que Jorge la suba)
  *   - Nombre grande con tipografía de display
  *   - Subtítulo y descripción
  *   - Botón "Explorar"
@@ -52,13 +52,6 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Línea horizontal decorativa — estilo instrumento de medición */}
-      <div
-        className="absolute left-0 right-0 pointer-events-none"
-        style={{ top: '50%', height: '1px', background: 'linear-gradient(90deg, transparent, rgba(59,111,212,0.15), transparent)' }}
-        aria-hidden="true"
-      />
-
       {/* LAYOUT PRINCIPAL */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pt-20 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-0 items-center min-h-[80vh]">
@@ -72,23 +65,17 @@ export default function Hero() {
               animate="visible"
               className="flex flex-col gap-6"
             >
-              {/* Etiqueta de categoría — estilo terminal */}
-              <motion.div variants={itemVariants} className="flex items-center gap-3">
-                <span className="section-number">[ 00 ]</span>
-                <span className="text-dust font-mono text-xs tracking-widest uppercase">
-                  Sistema iniciado
-                </span>
-                {/* Indicador de estado — punto parpadeante */}
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-quasar opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-quasar" />
+              {/* Etiqueta de ubicación */}
+              <motion.div variants={itemVariants}>
+                <span className="font-body text-dust" style={{ fontSize: '0.9rem' }}>
+                  Universidad del Valle de Guatemala
                 </span>
               </motion.div>
 
               {/* Nombre — el elemento más grande y memorable */}
               <motion.h1
                 variants={itemVariants}
-                className="font-display text-star glow-nebula"
+                className="font-display text-star"
                 style={{
                   fontSize:      'clamp(3.5rem, 8vw, 7.5rem)',
                   lineHeight:    0.92,
@@ -98,12 +85,7 @@ export default function Hero() {
               >
                 Jorge
                 <br />
-                <span
-                  style={{
-                    WebkitTextStroke: '1px rgba(59,111,212,0.6)',
-                    color:            'transparent',
-                  }}
-                >
+                <span style={{ color: 'var(--color-star)' }}>
                   Villeda
                 </span>
               </motion.h1>
@@ -166,92 +148,37 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
               className="relative"
             >
-              {/* Marco de foto con efecto de panel de datos */}
+              {/* Marco de foto — limpio, sin decoraciones HUD */}
               <div
                 className="relative w-64 h-80 lg:w-80 lg:h-96"
                 style={{
-                  border:       '1px solid rgba(59,111,212,0.3)',
-                  borderRadius: '4px',
+                  border:       '1px solid rgba(59,111,212,0.25)',
+                  borderRadius: '6px',
+                  overflow:     'hidden',
                 }}
               >
-                {/* Esquinas decorativas — estilo HUD / observatorio */}
-                <HudCorner position="top-left"     />
-                <HudCorner position="top-right"    />
-                <HudCorner position="bottom-left"  />
-                <HudCorner position="bottom-right" />
-
-                {/* Foto — placeholder hasta que Jorge suba la suya */}
-                <div className="absolute inset-2 overflow-hidden" style={{ borderRadius: '2px' }}>
+                {/* Foto — reemplazar con: import jorgeFoto from '../assets/jorge-photo.jpg'
+                    y luego: <img src={jorgeFoto} alt="Jorge Villeda" className="w-full h-full object-cover" /> */}
+                <div className="absolute inset-0 overflow-hidden">
                   <div
-                    className="w-full h-full flex flex-col items-center justify-center gap-4"
-                    style={{ background: 'linear-gradient(160deg, rgba(13,22,40,0.8), rgba(8,13,26,0.9))' }}
+                    className="w-full h-full flex flex-col items-center justify-center gap-5"
+                    style={{ background: '#0d1628' }}
                   >
-                    {/* Icono placeholder */}
                     <div
-                      className="w-20 h-20 rounded-full flex items-center justify-center"
-                      style={{ background: 'rgba(59,111,212,0.15)', border: '1px solid rgba(59,111,212,0.3)' }}
+                      className="w-24 h-24 rounded-full flex items-center justify-center"
+                      style={{ background: '#111d35', border: '1px solid rgba(59,111,212,0.25)' }}
                     >
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="rgba(59,111,212,0.8)" strokeWidth="1.5">
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(59,111,212,0.5)" strokeWidth="1.2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                         <circle cx="12" cy="7" r="4"/>
                       </svg>
                     </div>
-
-                    {/* Instrucción para Jorge */}
-                    <p
-                      className="text-center font-mono text-dust/60 px-4"
-                      style={{ fontSize: '0.65rem', lineHeight: 1.6 }}
-                    >
-                      // Reemplazar con foto profesional
-                      <br />
-                      // src/assets/jorge-photo.jpg
+                    <p className="font-body text-dust/40" style={{ fontSize: '0.78rem' }}>
+                      Foto próximamente
                     </p>
                   </div>
                 </div>
-
-                {/* Etiqueta de datos — esquina inferior */}
-                <div
-                  className="absolute -bottom-3 left-4 right-4 flex justify-between items-center"
-                  style={{
-                    background:   'var(--color-deep)',
-                    padding:      '0.25rem 0.75rem',
-                    border:       '1px solid rgba(59,111,212,0.3)',
-                    borderRadius: '2px',
-                  }}
-                >
-                  <span className="font-mono text-dust" style={{ fontSize: '0.6rem', letterSpacing: '0.1em' }}>
-                    UVG · GT
-                  </span>
-                  <span className="font-mono text-nebula" style={{ fontSize: '0.6rem' }}>
-                    ●  activo
-                  </span>
-                </div>
               </div>
-
-              {/* Tarjeta flotante de estadística — detalle de dashboard */}
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -left-6 top-1/3 hidden lg:block"
-                style={{
-                  background:   'rgba(13,22,40,0.92)',
-                  border:       '1px solid rgba(59,111,212,0.25)',
-                  backdropFilter: 'blur(8px)',
-                  padding:      '0.75rem 1rem',
-                  borderRadius: '4px',
-                  minWidth:     '130px',
-                }}
-              >
-                <p className="font-mono text-dust/60 uppercase tracking-widest" style={{ fontSize: '0.55rem' }}>
-                  Intereses
-                </p>
-                <p className="font-display text-star font-bold mt-1" style={{ fontSize: '1.4rem', lineHeight: 1 }}>
-                  7
-                </p>
-                <p className="font-mono text-nebula" style={{ fontSize: '0.6rem', marginTop: '0.25rem' }}>
-                  áreas activas
-                </p>
-              </motion.div>
 
             </motion.div>
           </div>
@@ -283,20 +210,4 @@ export default function Hero() {
   )
 }
 
-/* ---- Subcomponente: Esquinas decorativas estilo HUD ---- */
-function HudCorner({ position }) {
-  const posClasses = {
-    'top-left':     'top-0 left-0',
-    'top-right':    'top-0 right-0 rotate-90',
-    'bottom-left':  'bottom-0 left-0 -rotate-90',
-    'bottom-right': 'bottom-0 right-0 rotate-180',
-  }
 
-  return (
-    <div className={`absolute w-4 h-4 pointer-events-none ${posClasses[position]}`} aria-hidden="true">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M0 8 L0 0 L8 0" stroke="rgba(59,111,212,0.7)" strokeWidth="1.5" fill="none"/>
-      </svg>
-    </div>
-  )
-}

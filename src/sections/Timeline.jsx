@@ -133,32 +133,31 @@ function TimelineEvent({ event, index, isLeft }) {
         style={{
           border:        `1px solid rgba(59,111,212,0.15)`,
           borderRadius:  '4px',
-          background:    'rgba(13,22,40,0.7)',
+          background:    '#0d1628',
           padding:       '1rem 1.25rem',
-          backdropFilter:'blur(4px)',
         }}
       >
         {/* Año + categoría */}
         <div className="flex items-center gap-3 flex-wrap">
           <span
-            className="font-mono text-star font-medium"
-            style={{ fontSize: '0.85rem' }}
+            className="font-display text-star font-bold"
+            style={{ fontSize: '0.9rem' }}
           >
             {event.year}
           </span>
           <span
-            className="font-mono"
+            className="font-body"
             style={{
               color:        event.categoryColor,
-              fontSize:     '0.6rem',
-              letterSpacing:'0.1em',
-              border:       `1px solid ${event.categoryColor}40`,
-              padding:      '0.1rem 0.5rem',
+              fontSize:     '0.75rem',
+              fontWeight:   500,
+              border:       `1px solid ${event.categoryColor}30`,
+              padding:      '0.1rem 0.6rem',
               borderRadius: '2px',
-              background:   `${event.categoryColor}10`,
+              background:   '#111d35',
             }}
           >
-            {event.category.toUpperCase()}
+            {event.category}
           </span>
         </div>
 
@@ -172,8 +171,8 @@ function TimelineEvent({ event, index, isLeft }) {
 
         {/* Descripción */}
         <p
-          className="font-body text-dust/80"
-          style={{ fontSize: '0.83rem', lineHeight: 1.7 }}
+          className="font-body text-dust"
+          style={{ fontSize: '0.85rem', lineHeight: 1.75, fontWeight: 500 }}
         >
           {event.description}
         </p>
@@ -222,10 +221,9 @@ function ProximamenteNode() {
       <div
         className="md:mx-auto md:max-w-lg"
         style={{
-          border:        '1px solid rgba(107,93,232,0.3)',
+          border:        '1px solid rgba(107,93,232,0.25)',
           borderRadius:  '6px',
-          background:    'rgba(13,22,40,0.85)',
-          backdropFilter:'blur(8px)',
+          background:    '#0d1628',
           padding:       '2rem',
           overflow:      'hidden',
           position:      'relative',
@@ -237,16 +235,10 @@ function ProximamenteNode() {
           style={{ background: 'linear-gradient(90deg, transparent, #6b5de8, #00d4ff, transparent)' }}
         />
 
-        {/* Año */}
-        <div className="flex items-center gap-2 mb-4">
-          <span className="font-mono text-pulsar/60" style={{ fontSize: '0.65rem', letterSpacing: '0.15em' }}>
-            PRÓXIMAMENTE
-          </span>
-          <div className="flex-1 h-px" style={{ background: 'rgba(107,93,232,0.2)' }} />
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pulsar opacity-60" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-pulsar" />
-          </span>
+        {/* Etiqueta de sección */}
+        <div className="flex items-center gap-3 mb-4">
+          <span className="section-number">[ 05 ]</span>
+          <div className="h-px flex-1" style={{ background: 'rgba(107,93,232,0.2)' }} />
         </div>
 
         <h3
@@ -257,8 +249,8 @@ function ProximamenteNode() {
         </h3>
 
         <p
-          className="font-body text-dust/80 mb-6"
-          style={{ fontSize: '0.88rem', lineHeight: 1.75 }}
+          className="font-body text-dust mb-6"
+          style={{ fontSize: '0.88rem', lineHeight: 1.75, fontWeight: 500 }}
         >
           Aunque mi stack actual es desarrollo de software, mi objetivo profesional a largo plazo
           es especializarme en el cruce entre datos, matemáticas y sistemas complejos.
@@ -272,13 +264,13 @@ function ProximamenteNode() {
               key={goal.label}
               className="flex items-center gap-2 px-3 py-2"
               style={{
-                border:       `1px solid ${goal.color}25`,
+                border:       `1px solid ${goal.color}20`,
                 borderRadius: '3px',
-                background:   `${goal.color}08`,
+                background:   '#111d35',
               }}
             >
               <span style={{ color: goal.color, fontSize: '0.75rem' }}>{goal.icon}</span>
-              <span className="font-body text-star/80" style={{ fontSize: '0.78rem' }}>
+              <span className="font-body text-star" style={{ fontSize: '0.82rem', fontWeight: 500 }}>
                 {goal.label}
               </span>
             </div>
@@ -288,26 +280,26 @@ function ProximamenteNode() {
         {/* Cita de John Nash */}
         <blockquote
           style={{
-            borderLeft: '2px solid rgba(107,93,232,0.5)',
+            borderLeft: '2px solid rgba(107,93,232,0.4)',
             paddingLeft: '1rem',
             margin: 0,
           }}
         >
           <p
-            className="font-body"
+            className="font-body text-dust"
             style={{
-              color:      'rgba(232,234,246,0.75)',
-              fontSize:   '0.85rem',
-              lineHeight: 1.7,
+              fontSize:   '0.88rem',
+              lineHeight: 1.75,
               fontStyle:  'italic',
+              fontWeight: 500,
             }}
           >
             "Caballeros, debo recordarles que mis probabilidades de éxito
             aumentan en cada nuevo intento."
           </p>
           <footer
-            className="font-mono mt-2"
-            style={{ color: 'rgba(107,93,232,0.7)', fontSize: '0.65rem', letterSpacing: '0.08em' }}
+            className="font-body mt-2"
+            style={{ color: 'rgba(107,93,232,0.8)', fontSize: '0.78rem', fontWeight: 500 }}
           >
             — John Nash
           </footer>

@@ -2,7 +2,7 @@
  * QuienSoy.jsx — Sección 2: Quién soy
  *
  * Muestra una constelación SVG interactiva donde cada nodo es una faceta
- * de mi identidad. Al hacer clic en un nodo, se despliega un panel
+ * de la identidad de Jorge. Al hacer clic en un nodo, se despliega un panel
  * lateral con imagen/video + tagline + texto descriptivo.
  *
  * Estructura:
@@ -107,10 +107,9 @@ function ConstellationCanvas({ activeNode, onNodeClick }) {
     <div
       className="relative w-full"
       style={{
-        border:        '1px solid rgba(59,111,212,0.12)',
+        border:        '1px solid rgba(59,111,212,0.15)',
         borderRadius:  '6px',
-        background:    'rgba(8,13,26,0.5)',
-        backdropFilter:'blur(4px)',
+        background:    '#0a1020',
       }}
     >
       <svg
@@ -162,12 +161,8 @@ function ConstellationCanvas({ activeNode, onNodeClick }) {
 
       {/* Leyenda inferior */}
       <div className="px-4 pb-3 flex items-center gap-2">
-        <span className="font-mono text-dust/40" style={{ fontSize: '0.6rem', letterSpacing: '0.1em' }}>
-          HAGA CLIC EN UN NODO PARA EXPLORAR
-        </span>
-        <div className="flex-1 h-px" style={{ background: 'rgba(59,111,212,0.1)' }} />
-        <span className="font-mono text-nebula/40" style={{ fontSize: '0.6rem' }}>
-          {CONSTELLATION_NODES.length} nodos
+        <span className="font-body text-dust/50" style={{ fontSize: '0.78rem' }}>
+          Haz clic en un nodo para explorar
         </span>
       </div>
     </div>
@@ -223,11 +218,12 @@ function ConstellationNode({ node, cx, cy, isActive, onClick }) {
 
       {/* Etiqueta de texto debajo del nodo */}
       <text
-        x={cx} y={cy + outerR + 12}
+        x={cx} y={cy + outerR + 13}
         textAnchor="middle"
-        fill={isActive ? node.color : 'rgba(136,146,164,0.8)'}
-        fontSize={isActive ? '10' : '9'}
-        fontFamily="JetBrains Mono, monospace"
+        fill={isActive ? node.color : 'rgba(136,146,164,0.9)'}
+        fontSize={isActive ? '10.5' : '9.5'}
+        fontFamily="DM Sans, sans-serif"
+        fontWeight={isActive ? '500' : '400'}
         style={{ transition: 'all 0.3s ease', userSelect: 'none' }}
       >
         {node.label}
@@ -251,8 +247,7 @@ function NodePanel({ node, onClose }) {
       style={{
         border:        `1px solid ${node.color}30`,
         borderRadius:  '6px',
-        background:    'rgba(8,13,26,0.85)',
-        backdropFilter:'blur(8px)',
+        background:    '#0d1628',
         overflow:      'hidden',
       }}
     >
@@ -265,11 +260,12 @@ function NodePanel({ node, onClose }) {
       {/* Botón cerrar */}
       <button
         onClick={onClose}
-        className="absolute top-3 right-3 z-10 font-mono text-dust/50 hover:text-star transition-colors"
-        style={{ fontSize: '0.7rem', letterSpacing: '0.1em' }}
+        className="absolute top-3 right-3 z-10 text-dust/40 hover:text-star transition-colors p-1"
         aria-label="Cerrar panel"
       >
-        [ ESC ]
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+          <path d="M1 1l12 12M13 1L1 13"/>
+        </svg>
       </button>
 
       {/* ---- Área de media ---- */}
@@ -291,8 +287,8 @@ function NodePanel({ node, onClose }) {
 
         {/* Tagline */}
         <p
-          className="font-mono"
-          style={{ color: node.color, fontSize: '0.72rem', letterSpacing: '0.05em' }}
+          className="font-body"
+          style={{ color: node.color, fontSize: '0.82rem', fontWeight: 500 }}
         >
           {node.tagline}
         </p>
@@ -302,8 +298,8 @@ function NodePanel({ node, onClose }) {
 
         {/* Texto libre */}
         <p
-          className="font-body text-dust/90"
-          style={{ fontSize: '0.88rem', lineHeight: 1.75 }}
+          className="font-body text-dust"
+          style={{ fontSize: '0.88rem', lineHeight: 1.75, fontWeight: 500 }}
         >
           {node.body}
         </p>
@@ -385,7 +381,7 @@ function MediaBlock({ node }) {
           <line x1="16" y1="13" x2="8" y2="13"/>
           <line x1="16" y1="17" x2="8" y2="17"/>
         </svg>
-        <span className="font-mono text-dust/40" style={{ fontSize: '0.65rem', letterSpacing: '0.08em' }}>
+        <span className="font-body text-dust/40" style={{ fontSize: '0.78rem', textAlign: 'center', padding: '0 1rem' }}>
           {media.placeholder}
         </span>
       </div>
@@ -409,7 +405,7 @@ function MediaBlock({ node }) {
       >
         {node.icon}
       </div>
-      <span className="font-mono text-dust/40" style={{ fontSize: '0.65rem', letterSpacing: '0.08em', textAlign: 'center', padding: '0 1rem' }}>
+      <span className="font-body text-dust/40" style={{ fontSize: '0.78rem', textAlign: 'center', padding: '0 1rem' }}>
         {media.placeholder}
       </span>
     </div>
@@ -444,8 +440,8 @@ function EmptyPanelHint() {
         <line x1="30" y1="30" x2="12" y2="50" stroke="#3b6fd4" strokeWidth="0.5" strokeOpacity="0.3" strokeDasharray="3 4"/>
       </svg>
 
-      <p className="font-mono text-dust/40 text-center" style={{ fontSize: '0.72rem', lineHeight: 1.7, letterSpacing: '0.05em' }}>
-        Selecciona un nodo<br />para explorar esa faceta
+      <p className="font-body text-dust/50 text-center" style={{ fontSize: '0.88rem', lineHeight: 1.7 }}>
+        Selecciona un nodo para explorar esa faceta
       </p>
     </motion.div>
   )

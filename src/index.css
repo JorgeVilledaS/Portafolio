@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* =========================================================
-   BASE STYLES 
+   BASE STYLES — Jorge Villeda Portfolio
    ========================================================= */
 
 :root {
@@ -14,7 +14,7 @@
   --color-pulsar:  #6b5de8;
   --color-quasar:  #00d4ff;
   --color-star:    #e8eaf6;
-  --color-dust:    #8892a4;
+  --color-dust:    #9aa3b5;
 }
 
 /* Scroll suave global */
@@ -32,6 +32,7 @@ body {
   background-color: var(--color-deep);
   color: var(--color-star);
   font-family: 'DM Sans', sans-serif;
+  font-weight: 450;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -101,13 +102,9 @@ a, button, [role="button"] { cursor: pointer; }
   font-size: 0.65rem;
   color: var(--color-nebula);
   letter-spacing: 0.15em;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
-/* Glow sutil para elementos importantes */
-.glow-nebula {
-  text-shadow: 0 0 30px rgba(59, 111, 212, 0.5);
-}
-.glow-quasar {
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
-}
+/* Glow eliminado — los títulos no necesitan resplandor para tener presencia */
+.glow-nebula { text-shadow: none; }
+.glow-quasar { text-shadow: none; }
