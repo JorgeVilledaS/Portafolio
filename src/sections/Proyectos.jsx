@@ -50,8 +50,7 @@ export default function Proyectos() {
               Proyectos destacados
             </h2>
             <p className="font-body text-dust mt-3" style={{ maxWidth: '52ch', fontSize: '0.95rem', lineHeight: 1.7 }}>
-              Cada proyecto es una pregunta que quería responder.
-              El código es el medio; el aprendizaje, el resultado.
+              Decidí agarrar uno de cada rama de la computación que he explorado (Software, Diseño de Algoritmos y Ciencia de Datos)
             </p>
           </div>
         </FadeInView>

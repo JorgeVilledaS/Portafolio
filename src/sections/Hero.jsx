@@ -105,7 +105,7 @@ export default function Hero() {
                   fontStyle:  'italic',
                 }}
               >
-                "Trato de ser la persona más integral posible."
+                En este portafolio, conocerán un poco sobre mi formación, mis proyectos y las herramientas que manejo. Mi enfoque es ser la persona más integral posible, pues en un entorno tan cambiante y competitivo, factores como el liderazgo, extroversión y creatividad son muy valiosos.
               </motion.p>
 
               {/* Botón Explorar */}
@@ -183,7 +183,7 @@ export default function Hero() {
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         >
           <span className="font-mono text-dust/40 uppercase tracking-widest" style={{ fontSize: '0.6rem' }}>
-            scroll
+            bienvenidos
           </span>
           <div className="w-px h-12 overflow-hidden" style={{ background: 'rgba(61,74,92,0.3)' }}>
             <motion.div

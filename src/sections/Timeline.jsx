@@ -27,11 +27,8 @@ export default function Timeline() {
               className="font-display text-star"
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', letterSpacing: '-0.02em' }}
             >
-              Cómo llegué aquí
+              Cronología académica
             </h2>
-            <p className="font-body text-dust mt-3" style={{ maxWidth: '52ch', fontSize: '0.95rem', lineHeight: 1.7 }}>
-              Cada momento está conectado con el siguiente. Esta es la secuencia.
-            </p>
           </div>
         </FadeInView>
 
@@ -235,16 +232,14 @@ function ProximamenteNode() {
           className="font-display text-star font-bold mb-4"
           style={{ fontSize: '1.3rem', letterSpacing: '-0.02em' }}
         >
-          Hacia dónde apunta todo esto
+          El futuro
         </h3>
 
         <p
           className="font-body text-dust mb-6"
           style={{ fontSize: '0.88rem', lineHeight: 1.75, fontWeight: 500 }}
         >
-          Aunque mi stack actual es desarrollo de software, mi objetivo profesional a largo plazo
-          es especializarme en el cruce entre datos, matemáticas y sistemas complejos.
-          Todo lo que hago hoy es preparación para ese camino.
+          Mi plan a futuro es seguir explorando y aprendiendo paralelamente con la carrera, tratando de abrir oportunidades, de cara a ganar experiencia en el campo y ver hasta donde pueden llegar mis ideas, y qué tanto es posible mejorar al mundo.
         </p>
 
         {/* Grid de metas */}

@@ -1,8 +1,6 @@
 /**
  * content.js — Datos centralizados del portafolio
  *
- * Todo el texto, etiquetas y configuración de contenido vive aquí.
- * Así Jorge puede actualizar su información sin tocar los componentes.
  */
 
 // =========================================================
@@ -19,8 +17,8 @@ export const CONSTELLATION_NODES = [
     y: 28,
     color: '#00d4ff',   // quasar
     icon: '✦',
-    tagline: 'Líder del Club de Astronomía — UVG',
-    body: `Soy el líder académico del Club de Astronomía de la Universidad del Valle de Guatemala. Lo que más me fascina de la astronomía no es solo mirar el cielo, sino entender que estamos usando física, matemáticas y datos para inferir verdades sobre objetos que nunca podremos tocar. Eso es exactamente lo que quiero hacer con los datos en la Tierra.`,
+    tagline: 'Liderazgo en el Club de Astronomía — UVG',
+    body: `Una de las cosas que más me apasiona es la astronomía, y como es un campo tan amplio e interdisciplinario, he aprendido mucho sobre computación, física, mecánica, aeronáutica, y he podido poner en práctica mi pasión formulando actividades, conversatorios y talleres en la universidad gracias a mi segundo año formando parte de la junta directiva del club.`,
     // Cuando Jorge tenga fotos, reemplazar estas rutas
     media: { type: 'image', src: null, placeholder: 'Fotos del club de astronomía — UVG' },
   },
@@ -31,8 +29,8 @@ export const CONSTELLATION_NODES = [
     y: 18,
     color: '#6b5de8',   // pulsar
     icon: '◈',
-    tagline: 'Tomar decisiones con información incompleta',
-    body: `Desde pequeño tuve obsesión por los datos y las estadísticas. Lo que me atrae de la probabilidad no es la certeza, sino todo lo contrario: cómo tomar la mejor decisión posible cuando la información es incompleta. Eso se aplica igual en el póker técnico, en el Pokémon competitivo, en los mercados, y en la ciencia.`,
+    tagline: 'Una de mis mayores fortalezas es el pensamiento estadístico.',
+    body: `Desde chiquito tuve obsesión por los datos y las estadísticas. Es lo que suelo hacer para entretenerme en las vacaciones. Lo que me atrae de la probabilidad no es el azar, sino todo lo contrario: cómo tomar la mejor decisión posible cuando la información es incompleta, y no ser resultadista: Es posible tomar la decisión correcta en base a la información recopilada. Eso se aplica en juegos que me apasionan como Pokémon competitivo y Póker técnico, y me encanta pensar que en todas las decisiones de la vida también.`,
     media: { type: 'image', src: null, placeholder: 'Foto: Pokémon competitivo + Póker técnico' },
   },
   {
@@ -43,7 +41,7 @@ export const CONSTELLATION_NODES = [
     color: '#3b6fd4',   // nebula
     icon: '⬡',
     tagline: 'ICPC — Algoritmos a La Tortrix 2.1',
-    body: `Participante por tercer año consecutivo en el International Collegiate Programming Contest (ICPC), la competición más prestigiosa de programación competitiva universitaria del mundo. Mi equipo se llama Algoritmos a La Tortrix 2.1. Competir bajo presión con un problema que no entiendes todavía es la mejor forma de aprender a pensar.`,
+    body: `Participante por tercer año consecutivo en el International Collegiate Programming Contest (ICPC), la competición más prestigiosa de programación competitiva universitaria del mundo. Mi equipo se llama Algoritmos a La Tortrix 2.1. Esta competición me emociona mucho, me hace sacar lo mejor de mí, y me siento orgulloso de los aprendizajes adicionales a la carrera universitaria adquiridos. Hemos llegado a las dos finales nacionales, y hemos quedado a un solo problema de representar a Guatemala en el mundial`,
     media: { type: 'image', src: null, placeholder: 'Foto de competición ICPC' },
   },
   {
@@ -54,7 +52,7 @@ export const CONSTELLATION_NODES = [
     color: '#e8eaf6',   // star
     icon: '◎',
     tagline: 'El presente como borrador del futuro',
-    body: `Me gusta escribir y leer ciencia ficción porque es el único género que piensa en serio sobre hacia dónde va el mundo. Escribo artículos en el blog de computación de la universidad, y tengo un cuento corto que ganó un premio universitario. También creo que escribir bien es una de las habilidades más subestimadas en tecnología.`,
+    body: `Siento que leer y escribir es una de las capacidades que los programadores más deberíamos cultivar. Mi mamá es escritora, entonces me ha inculcado mucho el área humanística que está al mismo nivel que la técnica y científica para mí. Me gusta escribir y leer ciencia ficción porque es el único género que piensa en serio sobre hacia dónde va el mundo. Escribo artículos en el blog de computación de la universidad, y tengo un cuento corto que ganó un concurso literario en 2023. Estoy seguro que la razón y sentido de mi vida la encontraré pensando sobre el futuro, escribiendo en el presente y creando algo que cambie la historia.`,
     // PDF del cuento — Jorge debe subirlo a public/
     media: { type: 'pdf', src: '/cuento-jorge-villeda.pdf', placeholder: 'PDF: Cuento corto premiado' },
   },
@@ -65,8 +63,8 @@ export const CONSTELLATION_NODES = [
     y: 62,
     color: '#6b5de8',   // pulsar
     icon: '♩',
-    tagline: 'Marimba, jazz, metal progresivo',
-    body: `Toco marimba. Hay un video de una presentación en la Universidad del Valle que resume mejor que cualquier texto lo que siento cuando estoy frente a un instrumento. Mis géneros favoritos van del jazz al metal progresivo, pasando por la música clásica contemporánea. Todos tienen en común estructuras matemáticas que vale la pena descubrir.`,
+    tagline: 'Miembro de la marimba de concierto de la universidad.',
+    body: `Toco marimba desde los 7 años y forma un papel muy importante en mi educación integral. Hay un video de una presentación en la Universidad del Valle que resume mejor que cualquier texto lo que siento cuando estoy frente a un instrumento. Considero a la música uno de los mayores placeres de la vida y considero que mi playlist de Spotify es mi posesión más preciada. Últimamente me ha gustado mucho el Math Rock, Folk Rock, Post Punk y la corriente chilena de artistas jovenes y muy talentosos. Me gusta decir que disfruto de todo. Me encanta Bad Bunny y Chopin.`,
     // Jorge debe reemplazar este link con el real de YouTube/Drive
     media: { type: 'video', src: 'https://www.youtube.com/embed/dQw4w9WgXcQ', placeholder: 'Video tocando marimba — UVG' },
   },
@@ -77,9 +75,21 @@ export const CONSTELLATION_NODES = [
     y: 82,
     color: '#00d4ff',   // quasar
     icon: '⬟',
-    tagline: 'El deporte más complejo del mundo',
-    body: `El fútbol es el deporte más complejo que existe porque combina atletismo individual, sistemas colectivos, toma de decisiones en fracción de segundo y una cultura que conecta a toda la humanidad. Soy apasionado del fútbol y también lo veo como un sistema que puede analizarse con datos —xG, presión, redes de pases— igual que cualquier otro conjunto de datos.`,
+    tagline: 'La pasión global por excelencia',
+    body: `Me apasiona el fútbol de una manera peculiar. Junta absolutamente todas las cosas que me apasionan. La competitividad de conquistarlo todo, la pasión que los aficionados y países sentimos casi culturalmente, la complejidad de un sistema colectivo, con todas las historias independientes de cada jugador. Esta cantidad absurda de información me mantiene pendiente de noticias, analizando datos y emocionandome semana a semana. El mundial es tan importante para mí que lo utilizo de referencia cronológica para saber en qué año hice qué cosa.`,
     media: { type: 'image', src: null, placeholder: 'Fotos del Mundial' },
+  },
+
+    {
+    id: 'curiosidad',
+    label: 'Un poco de todo',
+    x: 60,
+    y: 75,
+    color: '#00d4ff',   // quasar
+    icon: '⬟',
+    tagline: 'Por sobre todas las cosas, estoy abierto a aprender de todo lo que me rodea, y adaptarme a la situación en la que esté.',
+    body: `La vida es muy corta como para vivir dos años, dos meses, dos días de la misma forma, entonces me gusta cambiar continuamente y aceptar las cosas que no puedo controlar. Cuando una meta se cruza en mi camino, hago todo lo posible por conseguirla, como el año pasado que me aprendí 244 dígitos de Pi en una semana para una competencia.`,
+    media: { type: 'image', src: null, placeholder: 'Concurso de digitos de Pi' },
   },
 ]
 
@@ -94,10 +104,11 @@ export const CONSTELLATION_EDGES = [
   ['futbol',      'estadistica'],
   ['astronomia',  'programacion'],
   ['musica',      'estadistica'],
+  ['curiosidad',      'estadistica'],
 ]
 
 // =========================================================
-// SECCIÓN 3 — HERRAMIENTAS PARA CONSTRUIR IDEAS
+// SECCIÓN 3 — HERRAMIENTAS
 // =========================================================
 
 export const SKILL_CATEGORIES = [
@@ -105,40 +116,41 @@ export const SKILL_CATEGORIES = [
     id: 'desarrollo',
     label: 'Desarrollo',
     number: '01',
-    description: 'El stack para convertir ideas en software real.',
+    description: 'Tomar con discreción. Esta lista seguirá creciendo',
     skills: [
       { name: 'Python',      level: 90 },
-      { name: 'Java',        level: 75 },
-      { name: 'C++',         level: 70 },
-      { name: 'Kotlin',      level: 60 },
-      { name: 'JavaScript',  level: 82 },
-      { name: 'React',       level: 78 },
+      { name: 'Java',        level: 65 },
+      { name: 'C++',         level: 50 },
+      { name: 'Kotlin',      level: 65 },
+      { name: 'JavaScript',  level: 85 },
+      { name: 'React',       level: 70 },
       { name: 'HTML / CSS',  level: 85 },
-      { name: 'SQL',         level: 72 },
-      { name: 'Git',         level: 80 },
+      { name: 'SQL',         level: 90 },
+      { name: 'Git',         level: 90 },
     ],
   },
   {
     id: 'datos',
     label: 'Datos',
     number: '02',
-    description: 'Herramientas para extraer señal del ruido.',
+    description: 'Herramientas estadísticas que domino',
     skills: [
-      { name: 'Estadística básica e intermedia', level: 85 },
-      { name: 'Teoría de la probabilidad',       level: 80 },
-      { name: 'Análisis de datos',               level: 75 },
+      { name: 'Estadística básica e intermedia', level: 80 },
+      { name: 'Teoría de la probabilidad',       level: 90 },
+      { name: 'Análisis de datos',               level: 70 },
       { name: 'Visualización',                   level: 70 },
-    ],
+      { name: 'Excel (clave)',                           level: 99 },
+    ],    
   },
   {
     id: 'ia',
     label: 'Inteligencia Artificial',
     number: '03',
-    description: 'El área hacia donde apunta todo lo anterior.',
+    description: 'Actualmente, es indispensable esta área.',
     skills: [
-      { name: 'Prompt Engineering',  level: 82 },
-      { name: 'Herramientas de IA',  level: 78 },
-      { name: 'Automatización',      level: 68 },
+      { name: 'Prompt Engineering',  level: 90 },
+      { name: 'Herramientas de IA',  level: 70 },
+      { name: 'Automatización',      level: 60 },
     ],
   },
 ]
@@ -146,8 +158,6 @@ export const SKILL_CATEGORIES = [
 // =========================================================
 // SECCIÓN 3 — PROYECTOS DESTACADOS
 // =========================================================
-// Jorge: reemplaza image, repoUrl y completa los campos con tus proyectos reales.
-// Puedes agregar o quitar proyectos; el componente se adapta automáticamente.
 
 export const PROJECTS = [
   {

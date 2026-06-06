@@ -32,11 +32,10 @@ export default function Herramientas() {
               className="font-display text-star"
               style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', letterSpacing: '-0.02em' }}
             >
-              Herramientas para construir ideas
+              Conocimiento técnico - Stack
             </h2>
             <p className="font-body text-dust mt-3" style={{ maxWidth: '52ch', fontSize: '0.95rem', lineHeight: 1.7 }}>
-              Las herramientas son el medio, no el fin. El objetivo es tener el stack necesario
-              para que ninguna idea quede sin implementar.
+              Considero que las ideas son más importantes que las herramientas, pero sin estas últimas, las primeras no pueden materializarse. Estas son las que manejo actualmente, aunque intento aprender nuevas constantemente.
             </p>
           </div>
         </FadeInView>

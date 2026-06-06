@@ -50,8 +50,7 @@ export default function QuienSoy() {
               Quién soy
             </h2>
             <p className="font-body text-dust mt-3" style={{ maxWidth: '52ch', fontSize: '0.95rem', lineHeight: 1.7 }}>
-              No soy solo un desarrollador. Cada nodo de esta constelación es una parte real de quién soy.
-              Todas están conectadas entre sí — esa conexión es el punto.
+              Lo que más me gusta de apasionarme de diferentes cosas, es que la educación integral termina mostrando el mundo desde una perspectiva más rica y todo termina entrelazandose de alguna manera, como se puede ver en esta constelación de los temas que me apasionan.
             </p>
           </div>
         </FadeInView>
