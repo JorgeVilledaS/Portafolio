@@ -58,7 +58,7 @@ También me arriesgué con la paleta y la estética. Un fondo negro con estrella
 
 ### Si tuviera otra semana, ¿qué mejoraría?
 
-**Primero**, añadir una visualización de datos real en la sección de estadística. Tengo datos de mis participaciones en ICPC y de actividades del club de astronomía. Renderizar una gráfica interactiva con esos datos reales habría reforzado la narrativa de "persona de datos" de una forma que el texto solo no puede hacer.
+**Primero**, Me habría gustado elegir de mejor manera la forma de mostrar los proyectos realizados, pues siento que me fui por lo fácil, y podría haber hecho algo más interesante al respecto, en lugar de adjuntar archivos o links.
 
 **Segundo**, trabajar más profundo el rendimiento en mobile. La constelación SVG funciona bien en desktop pero en pantallas pequeñas el área de interacción de los nodos es pequeña y el panel lateral se convierte en panel inferior. Funciona, pero hay margen para mejorar la experiencia táctil con nodos más grandes en touch, gestos de swipe para navegar entre nodos, y potencialmente un layout completamente diferente para móvil en lugar de solo adaptar el de desktop.
 
