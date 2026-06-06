@@ -30,7 +30,7 @@ export default function Footer() {
             </span>
           </div>
 
-          {/* Links de redes — placeholders listos para actualizar */}
+          {/* Links de redes*/}
           <div className="flex items-center gap-6">
             {[
               { label: 'GitHub',   href: 'https://github.com/JorgeVilledaS/Portafolio' },

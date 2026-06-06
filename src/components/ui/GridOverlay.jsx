@@ -1,7 +1,6 @@
 /**
  * GridOverlay.jsx
  * Cuadrícula de líneas muy sutiles inspirada en dashboards de datos.
- * Da profundidad y contexto visual sin distraer.
  */
 
 export default function GridOverlay() {

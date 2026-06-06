@@ -1,8 +1,7 @@
 /**
  * QuienSoy.jsx — Sección 2: Quién soy
  *
- * Muestra una constelación SVG interactiva donde cada nodo es una faceta
- * de la identidad de Jorge. Al hacer clic en un nodo, se despliega un panel
+ * Muestra una constelación SVG interactiva donde cada nodo es un hobbie. Al hacer clic en un nodo, se despliega un panel
  * lateral con imagen/video + tagline + texto descriptivo.
  *
  * Estructura:

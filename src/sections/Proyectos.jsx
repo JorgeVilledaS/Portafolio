@@ -8,14 +8,6 @@
  *   - Problema resuelto
  *   - Aprendizaje principal
  *   - Link al repositorio
- *
- * La animación de hover (whileHover) es la única de esta sección,
- * según lo especificado en los requisitos del Día 1.
- *
- * El layout usa una cuadrícula que se adapta:
- *   - 1 proyecto  → centrado ancho completo
- *   - 2 proyectos → dos columnas
- *   - 3+          → primer proyecto destacado (ancho completo), el resto en grid
  */
 
 import { useState }          from 'react'

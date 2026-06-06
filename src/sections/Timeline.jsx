@@ -1,15 +1,5 @@
 /**
  * Timeline.jsx — Sección 4: Línea de tiempo
- *
- * Línea vertical central con eventos a izquierda y derecha (desktop)
- * o todos a la derecha (mobile).
- *
- * La animación de entrada es la del Día 1 (FadeInView), pero cada
- * evento tiene su propia revelación escalonada al entrar en viewport.
- *
- * Al final de la línea hay un nodo especial "Próximamente" que
- * muestra las metas de Jorge — esto elimina la necesidad de una
- * sección separada para ese contenido.
  */
 
 import { motion } from 'framer-motion'
@@ -183,7 +173,7 @@ function TimelineEvent({ event, index, isLeft }) {
 }
 
 // =========================================================
-// NODO FINAL: PRÓXIMAMENTE
+// NODO FINAL:
 // =========================================================
 
 function ProximamenteNode() {

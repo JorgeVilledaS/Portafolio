@@ -1,15 +1,5 @@
 /**
  * Hero.jsx — Sección 1
- *
- * Pantalla completa con:
- *   - Foto profesional (placeholder hasta que Jorge la suba)
- *   - Nombre grande con tipografía de display
- *   - Subtítulo y descripción
- *   - Botón "Explorar"
- *   - Coordenadas ficticias estilo observatorio (detalle de carácter)
- *   - Líneas de datos sutiles
- *
- * Animación: solo el stagger de entrada (Framer Motion, una vez).
  */
 
 import { motion } from 'framer-motion'
@@ -40,7 +30,7 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      {/* Gradiente radial de profundidad — nebulosa de fondo */}
+      {/* Fondo estrellado  */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{

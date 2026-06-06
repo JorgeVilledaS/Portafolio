@@ -24,8 +24,7 @@ export default function StarField({ count = 180 }) {
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      // Generar estrellas con seed fija para consistencia visual
-      // (usamos Math.random simple; en Día 2 podemos seedear si queremos)
+      // GEnerar estrellas aleatoriamente
       for (let i = 0; i < count; i++) {
         const x       = Math.random() * canvas.width
         const y       = Math.random() * canvas.height

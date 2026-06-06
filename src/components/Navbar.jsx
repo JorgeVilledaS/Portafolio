@@ -1,8 +1,6 @@
 /**
  * Navbar.jsx
  * Barra de navegación fija.
- * Se vuelve semi-opaca al hacer scroll para no tapar el contenido.
- * Links navegan por anclas (#seccion).
  */
 
 import { useState, useEffect } from 'react'
@@ -72,16 +70,6 @@ export default function Navbar() {
         >
           Contacto
         </a>
-
-        {/* Hamburger — mobile (solo visual por ahora, Día 2 lo conectamos) */}
-        <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
-          aria-label="Abrir menú"
-        >
-          <span className="block w-5 h-px bg-star" />
-          <span className="block w-5 h-px bg-star" />
-          <span className="block w-3 h-px bg-nebula" />
-        </button>
 
       </div>
     </motion.nav>
