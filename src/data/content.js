@@ -184,7 +184,7 @@ export const PROJECTS = [
     learning: 'El proyecto me enseñó a manejar grandes volúmenes de datos de manera eficiente, a diseñar un algoritmo de comparación que balanceara precisión y velocidad, y a presentar los resultados de una manera clara y útil para los usuarios finales.',
     techs: ['Python', 'Neo4j', 'SQL', 'Data Analysis', "Docker"],
     repoUrl: 'https://github.com/DiegoLinares11/MatchMaking',
-    category: 'Algoritmo/datos',
+    category: 'algoritmo',
   },
   {
     id: 'proyecto-3',
@@ -195,7 +195,7 @@ export const PROJECTS = [
     learning: 'Aprendí sobre la importancia de una buena arquitectura de base de datos y cómo una interfaz de usuario bien diseñada puede mejorar la eficiencia en la gestión de inventarios.',
     techs: ['POSTGRESQL', 'React', "Vite", "Node.js", "Docker", "Express"],
     repoUrl: 'https://github.com/JorgeVilledaS/proyecto2-db1/tree/proyecto3',
-    category: 'base de datos',
+    category: 'data',
   },
 ]
 
