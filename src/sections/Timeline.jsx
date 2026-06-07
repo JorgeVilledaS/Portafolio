@@ -175,10 +175,6 @@ function TimelineEvent({ event, index, isLeft }) {
 
 function ProximamenteNode() {
   const GOALS = [
-    { label: 'Ciencia de Datos',      icon: '◈', color: '#6b5de8' },
-    { label: 'Machine Learning',       icon: '⬡', color: '#3b6fd4' },
-    { label: 'Inteligencia Artificial',icon: '✦', color: '#00d4ff' },
-    { label: 'Física aplicada',        icon: '◎', color: '#6b5de8' },
   ]
 
   return (

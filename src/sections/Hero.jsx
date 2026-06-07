@@ -3,6 +3,7 @@
  */
 
 import { motion } from 'framer-motion'
+import portada from '../assets/portada.jpg'
 
 // Variantes de animación para el stagger de entrada del hero
 const containerVariants = {
@@ -147,26 +148,12 @@ export default function Hero() {
                   overflow:     'hidden',
                 }}
               >
-                {/* Foto — reemplazar con: import jorgeFoto from '../assets/jorge-photo.jpg'
-                    y luego: <img src={jorgeFoto} alt="Jorge Villeda" className="w-full h-full object-cover" /> */}
                 <div className="absolute inset-0 overflow-hidden">
-                  <div
-                    className="w-full h-full flex flex-col items-center justify-center gap-5"
-                    style={{ background: '#0d1628' }}
-                  >
-                    <div
-                      className="w-24 h-24 rounded-full flex items-center justify-center"
-                      style={{ background: '#111d35', border: '1px solid rgba(59,111,212,0.25)' }}
-                    >
-                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(59,111,212,0.5)" strokeWidth="1.2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                        <circle cx="12" cy="7" r="4"/>
-                      </svg>
-                    </div>
-                    <p className="font-body text-dust/40" style={{ fontSize: '0.78rem' }}>
-                      Foto próximamente
-                    </p>
-                  </div>
+                <img
+                  src={portada}
+                  alt="Jorge Villeda"
+                  className="w-full h-full object-cover"
+                />
                 </div>
               </div>
 
