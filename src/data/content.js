@@ -66,8 +66,7 @@ export const CONSTELLATION_NODES = [
     icon: '♩',
     tagline: 'Miembro de la marimba de concierto de la universidad.',
     body: `Toco marimba desde los 7 años y forma un papel muy importante en mi educación integral. Considero a la música uno de los mayores placeres de la vida y considero que mi playlist de Spotify es mi posesión más preciada. Últimamente me ha gustado mucho el Math Rock, Folk Rock, Post Punk y la corriente chilena de artistas jovenes y muy talentosos. Me gusta decir que disfruto de todo. Me encanta Bad Bunny y Chopin.`,
-    // Jorge debe reemplazar este link con el real de YouTube/Drive
-    media: { type: 'video', src: 'https://youtu.be/XT3YqHZFv7k?si=C9K8YHbdPjUCPcwg', placeholder: 'Video tocando marimba — UVG' },
+    media: { type: 'video', src: 'https://www.youtube.com/embed/XT3YqHZFv7k?si=IB0m3ugIWv9wqYqF', placeholder: 'Video tocando marimba — UVG' },
   },
   {
     id: 'futbol',
@@ -128,6 +127,7 @@ export const SKILL_CATEGORIES = [
       { name: 'HTML / CSS',  level: 85 },
       { name: 'SQL',         level: 90 },
       { name: 'Git',         level: 90 },
+      { name: 'Git',         level: 80 },
     ],
   },
   {
@@ -163,39 +163,39 @@ export const SKILL_CATEGORIES = [
 export const PROJECTS = [
   {
     id: 'proyecto-1',
-    title: 'Nombre del proyecto',
-    // Ruta relativa desde /public, ej: '/img/proyectos/proyecto-1.png'
-    // o null para mostrar el placeholder
+    title: 'Bodega de Licores — Proyecto de Software',
+
     image: null,
-    description: 'Descripción breve del proyecto. Qué hace, para quién, en qué contexto surgió.',
-    problem: 'El problema concreto que este proyecto resuelve o la necesidad que atiende.',
-    learning: 'La cosa más importante que aprendiste construyendo esto.',
-    techs: ['React', 'Python', 'SQL'],
-    repoUrl: 'https://github.com/jorgevilleda/',
+    video:'https://www.youtube.com/embed/ZesBuWq-PbQ?si=wTqOYZNViX7GWvAa',
+    description: 'Implementación de un sistema web para una bodega de licores ubicada en Quetzaltenango, que cuenta con tres sucursales, con funcionalidades de catálogo, carrito de compras y posicionamiento digital.',
+    problem: 'La bodega no tenía presencia digital ni un sistema de ventas en línea, lo que limitaba su alcance y crecimiento en un mercado cada vez más digitalizado.',
+    learning: 'Sobre todo el trabajo en equipo en un proyecto real, de un año de duración, con clientes reales y la importancia de la comunicación constante para alinear expectativas y entregar un producto que realmente resuelva las necesidades del cliente.',
+    techs: ['Express', 'Vue', 'Docker', "POSTGRESQL", "Node.js", "Clerk",],
+    repoUrl: 'https://github.com/eldmark/bodegas-backend',
     // 'web' | 'data' | 'algoritmo' — define el color del badge
     category: 'web',
   },
   {
     id: 'proyecto-2',
-    title: 'Nombre del proyecto',
-    image: null,
-    description: 'Descripción breve del proyecto. Qué hace, para quién, en qué contexto surgió.',
-    problem: 'El problema concreto que este proyecto resuelve o la necesidad que atiende.',
-    learning: 'La cosa más importante que aprendiste construyendo esto.',
-    techs: ['Python', 'Pandas', 'Matplotlib'],
-    repoUrl: 'https://github.com/jorgevilleda/',
-    category: 'data',
+    title: 'Matchmaking UVG — Análisis de datos y diseño de algoritmos',
+    image: '/grafo.jpg',
+    description: 'Se implementó un algoritmo de afinidad entre pares de estudiantes de la Universidad del Valle de Guatemala, basado en sus intereses, personalidad y preferencias, con el objetivo de fomentar la interacción social y la formación de amistades dentro de la comunidad universitaria.',
+    problem: 'La asociación estudiantil buscaba una forma eficiente de comparar a los estudiantes y encontrar a los más compatibles entre sí.',
+    learning: 'El proyecto me enseñó a manejar grandes volúmenes de datos de manera eficiente, a diseñar un algoritmo de comparación que balanceara precisión y velocidad, y a presentar los resultados de una manera clara y útil para los usuarios finales.',
+    techs: ['Python', 'Neo4j', 'SQL', 'Data Analysis', "Docker"],
+    repoUrl: 'https://github.com/DiegoLinares11/MatchMaking',
+    category: 'Algoritmo/datos',
   },
   {
     id: 'proyecto-3',
-    title: 'Nombre del proyecto',
-    image: null,
-    description: 'Descripción breve del proyecto. Qué hace, para quién, en qué contexto surgió.',
-    problem: 'El problema concreto que este proyecto resuelve o la necesidad que atiende.',
-    learning: 'La cosa más importante que aprendiste construyendo esto.',
-    techs: ['C++', 'Algoritmos'],
-    repoUrl: 'https://github.com/jorgevilleda/',
-    category: 'algoritmo',
+    title: 'Sistema de inventario para tienda - Base de datos/Web',
+    image: "/inventario.jpg",
+    description: 'Se desarrolló una aplicación para manejar el inventario de una tienda local, con manejo de usuarios y roles desde la base de datos, y una interfaz web para facilitar la gestión de productos, proveedores y ventas.',
+    problem: 'La tienda no contaba con un sistema organizado para manejar su inventario, lo que llevaba a errores frecuentes, falta de control sobre el stock y dificultades para realizar pedidos a proveedores.',
+    learning: 'Aprendí sobre la importancia de una buena arquitectura de base de datos y cómo una interfaz de usuario bien diseñada puede mejorar la eficiencia en la gestión de inventarios.',
+    techs: ['POSTGRESQL', 'React', "Vite", "Node.js", "Docker", "Express"],
+    repoUrl: 'https://github.com/JorgeVilledaS/proyecto2-db1/tree/proyecto3',
+    category: 'base de datos',
   },
 ]
 

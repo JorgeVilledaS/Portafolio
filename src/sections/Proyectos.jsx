@@ -262,7 +262,22 @@ function ProjectImage({ project, meta, featured }) {
     borderBottom: !featured ? `1px solid rgba(59,111,212,0.12)` : 'none',
   }
 
-  // Imagen real subida por Jorge
+  // Video embed (YouTube) — funciona en producción, bloqueado en localhost por YouTube
+  if (project.video) {
+    return (
+      <div style={containerStyle}>
+        <iframe
+          src={project.video}
+          title={`Demo: ${project.title}`}
+          style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    )
+  }
+
+  // Imagen
   if (project.image) {
     return (
       <div style={containerStyle}>
