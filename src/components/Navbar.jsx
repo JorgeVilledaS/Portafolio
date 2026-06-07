@@ -64,7 +64,7 @@ export default function Navbar() {
 
         {/* CTA — botón de contacto */}
         <a
-          href="mailto:jorge@example.com"
+          href="mailto:jvilledasolis@gmail.com"
           className="hidden md:flex items-center gap-2 px-4 py-2 border border-nebula/40 text-nebula hover:bg-nebula/10 transition-all duration-200 font-body"
           style={{ borderRadius: '2px', fontSize: '0.85rem', fontWeight: 500 }}
         >
